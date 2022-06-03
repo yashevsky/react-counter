@@ -2,3 +2,19 @@
     font-size: 20px;
     background: palegreen;
 }
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.salmon {
+    background: salmon;
+}
