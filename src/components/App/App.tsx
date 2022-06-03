@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react'
-import Button from '../Button'
+import React, { useEffect, useState } from 'react'
+import { Button } from '../Button'
 import styles from './styles.module.css'
 
-const App = () => {
+export const App = () => {
     const [counter, setCounter] = useState(0)
     const [secondCounter, setSecondCounter] = useState(0)
 
@@ -15,9 +15,8 @@ const App = () => {
     const newCounterInc = () => setSecondCounter(secondCounter + 1)
     const func = () => console.log('нажатие на window')
 
-
     useEffect(() => {
-        // ComponentDidMount и ComponentDidUpdate и ComponentWillUpdate
+    // ComponentDidMount и ComponentDidUpdate и ComponentWillUpdate
         console.log('что-то из списка зависимостей изменилось')
 
         window.addEventListener('click', func)
