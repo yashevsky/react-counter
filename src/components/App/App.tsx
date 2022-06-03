@@ -31,19 +31,36 @@ const App = () => {
 
 
   return (
-      // перенести стили в файл ксс
-      <div style={{display: 'flex', minHeight: '100vh', alignItems: 'center', justifyContent: 'center', flexDirection:'column'}}>
+      <div className={styles.root}>
           {counter < 0 ? (<h1>Значение меньше 0</h1>) : (<h1>{counter}</h1>)}
           <div>
-              <Button className={styles.firstButton} color="green" onClick={multiply10}>*10</Button>
-              <Button color="salmon" onClick={increment}>+</Button>
-              <Button color="yellow" onClick={resetCounter}>0</Button>
-              <Button color="red" onClick={decrement}>-</Button>
-              <Button color="green" onClick={division10}>/10</Button>
+              <Button color="red" onClick={multiply10}>C</Button>
+              <Button color="yellow" onClick={multiply10}>+/-</Button>
+              <Button color="yellow" onClick={multiply10}>%</Button>
+              <Button color="green" onClick={multiply10}>/</Button>
           </div>
           <div>
-              {secondCounter}
-              <Button onClick={newCounterInc}>+1</Button>
+              <Button onClick={division10}>7</Button>
+              <Button onClick={division10}>8</Button>
+              <Button onClick={division10}>9</Button>
+              <Button color="green" onClick={division10}>X</Button>
+          </div>
+          <div>
+          <Button onClick={multiply10}>4</Button>
+          <Button onClick={multiply10}>5</Button>
+          <Button onClick={multiply10}>6</Button>
+          <Button color="green" onClick={multiply10}>-</Button>
+          </div>
+          <div>
+          <Button onClick={multiply10}>1</Button>
+          <Button onClick={multiply10}>2</Button>
+          <Button onClick={multiply10}>3</Button>
+          <Button color="green" onClick={multiply10}>+</Button>
+          </div>
+          <div>
+          <Button onClick={multiply10}>0</Button>
+          <Button color="yellow" onClick={multiply10}>.</Button>
+          <Button color="green" onClick={multiply10}>=</Button>
           </div>
       </div>
   )
@@ -51,6 +68,4 @@ const App = () => {
 
 export default App
 
-
-// доп функц, репо, добавить AsheR4444
 

@@ -1,6 +1,16 @@
 .root {
-    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
     background: palegreen;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.root:hover {
+    background-color: palegreen;
+    color: whitesmoke;
 }
 
 .green {
