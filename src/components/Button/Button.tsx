@@ -6,7 +6,7 @@ import styles from './style.module.css'
 
 type ButtonProps = {
     children: React.ReactNode,
-    onClick: () => void,
+    onClick: (e?: React.MouseEvent) => void,
     color?: 'salmon' | 'yellow' | 'green' | 'red',
     className?: string | undefined
 }
